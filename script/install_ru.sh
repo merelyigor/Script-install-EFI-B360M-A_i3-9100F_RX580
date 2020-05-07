@@ -132,8 +132,6 @@ function efi_delivery() {
   sleep 3s
   git clone git@github.com:merelyigor/Asus-Prime-B360M-A_i3-9100F_RX580.git
 
-
-
   clear
   head
   echo "Переходим по пути Volumes/EFI/"
@@ -167,8 +165,7 @@ function efi_delivery() {
   sleep 3s
 
   echo "Перемещение папки выполнено успешно :)"
-  config_delivery
-
+  config_check
 }
 ######################################################### CONFIG DELIVERY #############################################################
 ######################################################### CONFIG DELIVERY #############################################################
@@ -176,6 +173,15 @@ function efi_delivery() {
 function config_delivery() {
   # получение папки EFI и конфига из моего приватного репозитория https://github.com/merelyigor/My_custom_config_plist
   # перемещение конфига config.plist в EFI раздел на диске
+  # TODO доделать скрипт с доставкой конфига
+  echo 'config_delivery'
+  echo "$1"
+}
+######################################################### CONFIG CHECK ################################################################
+######################################################### CONFIG CHECK ################################################################
+######################################################### CONFIG CHECK ################################################################
+function config_check() {
+  # Проверка и подтверждение репозитория с кастомным конфигом
 
   cat <<EEF
 ####################################################################################
@@ -183,8 +189,10 @@ function config_delivery() {
   Что за такое репо с кастомным конфигом вы могли прочитать в REDME
   ссылка на него https://github.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/blob/master/REDME_RU.md#%D1%87%D1%82%D0%BE-%D0%B7%D0%B0-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE-%D1%81-%D0%BA%D0%B0%D1%81%D1%82%D0%BE%D0%BC%D0%BD%D1%8B%D0%BC-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D0%BE%D0%BC-
 
-  Учтите что репозиторий должен соответствовать этим пунктам
-  О том как создать свое репо с настроенным config.plist можно по ссылке
+  О том как создать свое репо с настроенным config.plist можно по ссылке ниже
+  https://github.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/blob/master/REDME_RU.md#%D1%82%D0%B0%D0%BA-%D0%BA%D0%B0%D0%BA-%D0%B6%D0%B5-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%81%D0%B2%D0%BE%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE-%D1%87%D1%82%D0%BE%D0%B1-%D0%B2%D1%81%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%BB%D0%BE-%D0%BF%D0%BE-%D0%BC%D0%B0%D1%81%D0%BB%D1%83-
+
+ Учтите что репозиторий должен соответствовать этим пунктам
   1). Название репозитория должно быть                                    My_custom_config_plist
   2). Файл (config.plist) должен находиться в репо по такому пути         My_custom_config_plist/EFI/CLOVER/config.plist
   3). Если ваш репозиторий приватный у вас должен быть установлен ключь SSH или другой
@@ -202,53 +210,23 @@ function config_delivery() {
   1:Да, у меня есть мой репо и ссылка на него в формате git@github.com:USER/My_custom_config_plist.git
   2:Нет, у меня нет такого репо :( Выход.
   3: Я Merelyigor!
-
 ####################################################################################
 EEF
-  read -r config
+  read -r config_confirm
 
-  clear
-  head
-
-  cat <<EEF
-  Fᴏʀ ᴛʜᴇ sᴄʀɪᴘᴛ ᴛᴏ ᴡᴏʀᴋ, ʏᴏᴜ ᴍᴜsᴛ ʜᴀᴠᴇ ᴀ ᴍᴏᴜɴᴛᴇᴅ EFI ᴅɪsᴋ ᴘᴀʀᴛɪᴛɪᴏɴ
-  Iᴛ ɪs ᴀʟsᴏ ɴᴇᴄᴇssᴀʀʏ ᴛᴏ ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ᴏɴᴇ ᴘᴀʀᴛɪᴛɪᴏɴ ᴏғ ᴛʜᴇ EFI ᴅɪsᴋ ɪs ᴍᴏᴜɴᴛᴇᴅ
-  ᴏᴛʜᴇʀᴡɪsᴇ ᴛʜᴇ ᴘʀᴏɢʀᴀᴍ ᴡɪʟʟ ɪɴsᴛᴀʟʟ ᴛʜᴇ ᴡʀᴏɴɢ EFI ᴘᴀʀᴛɪᴛɪᴏɴ ғᴏʟᴅᴇʀ
-
-  Yᴏᴜ ᴍᴜsᴛ ᴀʟsᴏ ʜᴀᴠᴇ ᴀ ɢɪᴛ ɪɴsᴛᴀʟʟᴇᴅ, ʏᴏᴜ ᴄᴀɴ ᴄʜᴇᴄᴋ ᴛʜɪs ᴡɪᴛʜ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ
-  $ git --version
-
-  Iғ ʏᴏᴜ ᴅᴏɴ’ᴛ, ᴛʜᴇɴ sᴛᴏᴘ ᴛʜᴇ sᴄʀɪᴘᴛ ᴀɴᴅ ɪɴsᴛᴀʟʟ ɢɪᴛ ᴜsɪɴɢ ᴛʜɪs ʟɪɴᴋ
-  https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-
-  Cᴏɴғɪʀᴍ ᴛʜᴇ ᴀᴄᴛɪᴏɴ     1:ʏᴇs   2:Nᴏ
-EEF
-
-  read -r action
-
-  if [ "$action" == "1" ]; then
+  if [ "$config_confirm" == "1" ]; then
     clear
     head
-    start
+    config_delivery '1'
   elif
-    [ "$action" == "2" ]
+    [ "$config_confirm" == "2" ]
   then
-    clear
-    head
-    cat <<EEF
-  Yᴏᴜ ʜᴀᴠᴇ ᴄʜᴏsᴇɴ ᴛᴏ ᴄᴀɴᴄᴇʟ ᴛʜᴇ sᴄʀɪᴘᴛ ʀᴜɴ
-EEF
-  else
-    clear
-    head
-    cat <<EEF
-  Yᴏᴜ ᴇɴᴛᴇʀᴇᴅ ᴛʜᴇ ᴡʀᴏɴɢ ᴄᴏᴍᴍᴀɴᴅ
-  ɴᴇᴇᴅ ᴛᴏ ᴇɴᴛᴇʀ 1 ᴏʀ 2
-  ʀᴇᴘᴇᴀᴛ ᴏɴᴇ ᴍᴏʀᴇ ᴛɪᴍᴇ
-EEF
+    exit_programm
+  elif
+    [ "$config_confirm" == "3" ]
+  then
+    config_delivery '3'
   fi
-
-  # TODO доделать скрипт с доставкой конфига
 }
 ######################################################### START FUNCTIONAL ############################################################
 ######################################################### START FUNCTIONAL ############################################################
