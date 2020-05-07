@@ -9,4 +9,4 @@ There is a lot of work
 [Open repo with script for automatic delivery of EFI to disk](https://github.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580)
 
 
-## What kind of repo with custom config ???
+## Что за такое репо с кастомным конфигом ???
