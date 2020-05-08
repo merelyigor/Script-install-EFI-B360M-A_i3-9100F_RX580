@@ -234,6 +234,7 @@ EEF
 function start() {
   printf '\e[8;50;140t'
   printf '\e[5t'
+  echo "ты это даже не заметишь))"
   clear
   head
   check_efi_mount
