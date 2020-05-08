@@ -69,6 +69,7 @@ load "░░░░░░░░░░░░░░░░░░░░░░░░�
 
 echo "test"
 
+echo "$q"
 echo "$1"
 
 #sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_ru.sh)"
