@@ -193,9 +193,9 @@ function config_check() {
   https://github.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/blob/master/REDME_RU.md#%D1%82%D0%B0%D0%BA-%D0%BA%D0%B0%D0%BA-%D0%B6%D0%B5-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%81%D0%B2%D0%BE%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE-%D1%87%D1%82%D0%BE%D0%B1-%D0%B2%D1%81%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%BB%D0%BE-%D0%BF%D0%BE-%D0%BC%D0%B0%D1%81%D0%BB%D1%83-
 
  Учтите что репозиторий должен соответствовать этим пунктам
-  1). Название репозитория должно быть                                    My_custom_config_plist
-  2). Файл (config.plist) должен находиться в репо по такому пути         My_custom_config_plist/EFI/CLOVER/config.plist
-  3). Если ваш репозиторий приватный у вас должен быть установлен ключь SSH или другой
+  (). Название репозитория должно быть                                    My_custom_config_plist
+  (). Файл (config.plist) должен находиться в репо по такому пути         My_custom_config_plist/EFI/CLOVER/config.plist
+  (). Если ваш репозиторий приватный у вас должен быть установлен ключь SSH или другой
   для доступа клонирования вашего репо из терминала иначе будет ошибка.
 
   Если у вас нет репозитория с вашим личным уже настроенным (config.plist)
