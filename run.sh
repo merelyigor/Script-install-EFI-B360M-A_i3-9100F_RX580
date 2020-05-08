@@ -21,6 +21,7 @@ function language_confirm_function() {
     clear
     load
     cat <<EEF
+
                     Choose a script interface language
                     Выбирете язык интерфейса скрипта
 
@@ -34,6 +35,7 @@ EEF
     clear
     load
     cat <<EEF
+    
                     Choose a script interface language
                     Выбирете язык интерфейса скрипта
 
