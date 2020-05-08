@@ -35,7 +35,7 @@ EEF
     clear
     load
     cat <<EEF
-    
+
                     Choose a script interface language
                     Выбирете язык интерфейса скрипта
 
@@ -49,13 +49,13 @@ EEF
   if [ "$language_confirm" == "1" ]; then
     load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
     sleep 0.2s
-    sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_ru.sh)"
+    sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_en.sh)"
   elif
     [ "$language_confirm" == "2" ]
   then
     load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
     sleep 0.2s
-    sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_en.sh)"
+    sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_ru.sh)"
   else
     language_confirm_function 'error input'
   fi
