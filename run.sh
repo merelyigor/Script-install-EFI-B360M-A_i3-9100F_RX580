@@ -68,7 +68,6 @@ sleep 1s
 load "#############"
 osascript -e 'tell app "Terminal"
     do script "sh ~/temp_scripts_directory/install_ru.sh"
-    set user to do shell script "printf '\e[8;50;100t'"
   end tell'
 
 exit
