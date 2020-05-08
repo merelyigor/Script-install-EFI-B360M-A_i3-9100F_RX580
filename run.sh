@@ -66,7 +66,5 @@ rm -rf Script-install-EFI-B360M-A_i3-9100F_RX580/
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-osascript -e 'tell app "Terminal"
-    do script "sh ~/temp_scripts_directory/install_ru.sh;"
-  end tell'
-exit && logout && osascript -e 'tell application terminal close current window'
+
+sh ~/temp_scripts_directory/install_ru.sh;
