@@ -30,6 +30,7 @@ function language_confirm_function() {
 
                     1) EN.
                     2) RU.
+                    3) Exit/Выход
 EEF
   else
     clear
@@ -41,6 +42,7 @@ EEF
 
                     1) EN.
                     2) RU.
+                    3) Exit/Выход
 EEF
   fi
 
@@ -56,6 +58,12 @@ EEF
     load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
     sleep 0.2s
     sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_ru.sh)"
+  elif
+    [ "$language_confirm" == "3" ]
+    then
+    rm -rf temp_scripts_directory
+    exit
+  then
   else
     language_confirm_function 'error input'
   fi
