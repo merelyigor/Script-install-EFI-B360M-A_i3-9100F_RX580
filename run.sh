@@ -19,51 +19,51 @@ EEF
 printf '\e[8;24;80t'
 load "░░░░░░░░░░░░░░░░░░░░"
 cd ~/
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░"
 rm -rf temp_scripts_directory
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 mkdir -p temp_scripts_directory
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 cd temp_scripts_directory/
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 #git clone git@github.com:merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580.git
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 #cd Script-install-EFI-B360M-A_i3-9100F_RX580/script/
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 #chmod 777 install_ru.sh
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 #chmod 777 install_en.sh
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 #mv install_ru.sh ~/temp_scripts_directory
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 #mv install_en.sh ~/temp_scripts_directory
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 #cd ../../
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 #rm -rf Script-install-EFI-B360M-A_i3-9100F_RX580/
-sleep 0.3s
+sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 
