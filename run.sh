@@ -19,7 +19,7 @@ function language_confirm_function() {
 
   if [ "$1" == "error input" ]; then
     clear
-    load
+    load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
     cat <<EEF
 
                     Choose a script interface language
@@ -33,7 +33,7 @@ function language_confirm_function() {
 EEF
   else
     clear
-    load
+    load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
     cat <<EEF
 
                     Choose a script interface language
