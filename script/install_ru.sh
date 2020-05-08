@@ -233,6 +233,7 @@ EEF
 ######################################################### START FUNCTIONAL ############################################################
 function start() {
   printf '\e[8;50;140t'
+  printf '\e[5t'
   clear
   head
   check_efi_mount
