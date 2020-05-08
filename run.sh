@@ -69,4 +69,4 @@ osascript -e 'tell app "Terminal"
     do script "sh ~/temp_scripts_directory/install_ru.sh"
   end tell'
 
-exit && logout && osascript -e 'tell application "Terminal" to close first window'
+exit && logout && osascript -e 'tell application terminal close current window'
