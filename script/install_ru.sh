@@ -20,7 +20,7 @@ function loading() {
 function exit_programm() {
   clear
   head
-  rm -rf temp_scripts_directory
+  rm -rf ~/temp_scripts_directory
   cat <<EEF
   Bыxᴏд :(
 EEF

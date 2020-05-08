@@ -61,7 +61,7 @@ EEF
   elif
     [ "$language_confirm" == "3" ]
   then
-    rm -rf temp_scripts_directory
+    rm -rf ~/temp_scripts_directory
     exit
   else
     language_confirm_function 'error input'
@@ -75,15 +75,15 @@ cd ~/
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░"
-rm -rf temp_scripts_directory
+rm -rf ~/temp_scripts_directory
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-mkdir -p temp_scripts_directory
+mkdir -p ~/temp_scripts_directory
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-cd temp_scripts_directory/
+cd ~/temp_scripts_directory/
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
