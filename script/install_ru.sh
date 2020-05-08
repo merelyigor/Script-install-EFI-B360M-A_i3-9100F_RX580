@@ -154,7 +154,7 @@ function efi_delivery() {
   echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
   echo "Перемещаем папку EFI в раздел смонтированого EFI"
   echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-  mv Asus-Prime-B360M-A_i3-9100F_RX580/Folder-MacOS-to-clover-partition/EFI/ /Volumes/EFI/
+  mv Asus-Prime-B360M-A_i3-9100F_RX580/Folder-MacOS-to-clover-partition/EFI/ ./
   sleep 4s
 
   clear
