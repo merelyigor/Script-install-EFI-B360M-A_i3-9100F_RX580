@@ -140,7 +140,7 @@ function efi_delivery() {
   echo "ДОЖДИТЕСЬ ПОКА СКАЧАЮТСЯ ДАННЫЕ"
   echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
   sleep 3s
-  git clone git@github.com:merelyigor/Asus-Prime-B360M-A_i3-9100F_RX580.git
+  sudo git clone git@github.com:merelyigor/Asus-Prime-B360M-A_i3-9100F_RX580.git
 
   clear
   head
