@@ -60,7 +60,7 @@ EEF
     sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_ru.sh)"
   elif
     [ "$language_confirm" == "3" ]
-    then
+  then
     rm -rf temp_scripts_directory
     exit
   else
