@@ -34,37 +34,37 @@ cd temp_scripts_directory/
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-git clone git@github.com:merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580.git
+#git clone git@github.com:merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580.git
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-cd Script-install-EFI-B360M-A_i3-9100F_RX580/script/
+#cd Script-install-EFI-B360M-A_i3-9100F_RX580/script/
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-chmod 777 install_ru.sh
+#chmod 777 install_ru.sh
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-chmod 777 install_en.sh
+#chmod 777 install_en.sh
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-mv install_ru.sh ~/temp_scripts_directory
+#mv install_ru.sh ~/temp_scripts_directory
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-mv install_en.sh ~/temp_scripts_directory
+#mv install_en.sh ~/temp_scripts_directory
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-cd ../../
+#cd ../../
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-rm -rf Script-install-EFI-B360M-A_i3-9100F_RX580/
+#rm -rf Script-install-EFI-B360M-A_i3-9100F_RX580/
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 
-sh ~/temp_scripts_directory/install_ru.sh && rm -rf temp_scripts_directory/
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_ru.sh)"
