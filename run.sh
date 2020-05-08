@@ -19,6 +19,7 @@ function language_confirm_function() {
 
   if [ "$1" == "error input" ]; then
     clear
+    load
     cat <<EEF
                     Choose a script interface language
                     Выбирете язык интерфейса скрипта
@@ -31,6 +32,7 @@ function language_confirm_function() {
 EEF
   else
     clear
+    load
     cat <<EEF
                     Choose a script interface language
                     Выбирете язык интерфейса скрипта
