@@ -63,7 +63,6 @@ EEF
     then
     rm -rf temp_scripts_directory
     exit
-  then
   else
     language_confirm_function 'error input'
   fi
