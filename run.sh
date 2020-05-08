@@ -7,7 +7,7 @@ function load() {
   cat <<EEF
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-  Произходит иницыалицация скрипта и запуск, подождите...
+  Произходит инициалицация скрипта и запуск, подождите...
 
   Initialization of the script and start, wait...
 
@@ -19,51 +19,51 @@ EEF
 # Initialization of the script and start
 load "#"
 cd ~/
-sleep 1s
+sleep 0.3s
 
 load "##"
 rm -rf temp_scripts_directory
-sleep 1s
+sleep 0.3s
 
 load "###"
 mkdir -p temp_scripts_directory
-sleep 1s
+sleep 0.3s
 
 load "####"
 cd temp_scripts_directory/
-sleep 1s
+sleep 0.3s
 
 load "#####"
 git clone git@github.com:merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580.git
-sleep 1s
+sleep 0.3s
 
 load "######"
 cd Script-install-EFI-B360M-A_i3-9100F_RX580/script/
-sleep 1s
+sleep 0.3s
 
 load "#######"
 chmod 777 install_ru.sh
-sleep 1s
+sleep 0.3s
 
 load "########"
 chmod 777 install_en.sh
-sleep 1s
+sleep 0.3s
 
 load "#########"
 mv install_ru.sh ~/temp_scripts_directory
-sleep 1s
+sleep 0.3s
 
 load "##########"
 mv install_en.sh ~/temp_scripts_directory
-sleep 1s
+sleep 0.3s
 
 load "###########"
 cd ../../
-sleep 1s
+sleep 0.3s
 
 load "############"
 rm -rf Script-install-EFI-B360M-A_i3-9100F_RX580/
-sleep 1s
+sleep 0.3s
 
 load "#############"
 osascript -e 'tell app "Terminal"
