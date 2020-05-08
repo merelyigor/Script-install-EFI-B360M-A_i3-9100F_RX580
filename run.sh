@@ -66,7 +66,6 @@ sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 osascript -e 'tell app "Terminal"
-    do script "sh ~/temp_scripts_directory/install_ru.sh"
+    do script "sh ~/temp_scripts_directory/install_ru.sh;exit"
   end tell'
-
-exit && logout && osascript -e 'tell application terminal close current window'
+logout
