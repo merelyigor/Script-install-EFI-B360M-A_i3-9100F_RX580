@@ -19,7 +19,7 @@ EEF
 printf '\e[8;24;80t'
 load "░░░░░░░░░░░░░░░░░░░░"
 cd ~/
-sleep 0.1s
+sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░"
 rm -rf temp_scripts_directory
@@ -67,4 +67,6 @@ sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 
-sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_ru.sh)"
+echo "$1"
+
+#sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_ru.sh)"
