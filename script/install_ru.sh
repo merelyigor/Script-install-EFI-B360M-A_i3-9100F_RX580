@@ -138,6 +138,9 @@ function efi_delivery() {
   echo "Клонируем файлы из репозитория Asus-Prime-B360M-A_i3-9100F_RX580"
   echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
   echo "ДОЖДИТЕСЬ ПОКА СКАЧАЮТСЯ ДАННЫЕ"
+  echo ""
+  echo " !!! Вы можете остановиться на строке Are you sure you want to continue connecting (yes/no)?"
+  echo " !!! просто введите yes и нажмите Enter"
   echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
   sleep 3s
   sudo git clone git@github.com:merelyigor/Asus-Prime-B360M-A_i3-9100F_RX580.git
