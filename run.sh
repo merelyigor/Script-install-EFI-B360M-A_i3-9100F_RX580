@@ -67,5 +67,4 @@ sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 
-sh ~/temp_scripts_directory/install_ru.sh;
-rm -rf temp_scripts_directory/
+sh ~/temp_scripts_directory/install_ru.sh && rm -rf temp_scripts_directory/
