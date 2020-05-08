@@ -16,6 +16,7 @@ EEF
 }
 
 # Initialization of the script and start
+printf '\e[8;24;80t'
 load "░░░░░░░░░░░░░░░░░░░░"
 cd ~/
 sleep 0.3s
