@@ -27,8 +27,8 @@ EEF
 
 [Открыть репо со скриптом для автоматической доставки EFI](https://github.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580)
 
-Скопируйте в стандартный терминал и нажмите Enter
-```
+# Скопируйте в стандартный терминал и нажмите Enter
+```shell script
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/run.sh)"
 ```
 

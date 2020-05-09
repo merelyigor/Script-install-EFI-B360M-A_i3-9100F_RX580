@@ -27,8 +27,8 @@ EEF
 
 [Open repo with script for automatic delivery of EFI to disk](https://github.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580)
 
-Copy to standard terminal and press Enter
-```
+# Copy to standard terminal and press Enter
+```shell script
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/run.sh)"
 ```
 
