@@ -3,6 +3,7 @@
 #======================== Run scripts =======1.0
 #----------------------------------------------
 function load() {
+  # Загрузка шапки
   clear
   cat <<EEF
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
@@ -14,6 +15,22 @@ function load() {
 EEF
   echo "$1"
 }
+
+function error_exit_programm() {
+  # выход из программы изза ошибки перехода
+  # нет папки для перехода где работает скрипт
+  clear
+  head_error_text
+  rm -rf ~/temp_scripts_directory
+  echo
+  echo "  An error occurred navigating to the folder along the path:"
+  echo "  Произошла ошибка при переходе к папке по пути:"
+  echo "  [$1]"
+  echo
+  echo "  Exit due to Error :("
+  exit
+}
+
 # запрос на выбор языка
 function language_confirm_function() {
 
@@ -46,7 +63,7 @@ EEF
 EEF
   fi
 
-  read -r language_confirm
+  read -r -p "INPUT|ВВОД: "language_confirm
 
   if [ "$language_confirm" == "1" ]; then
     load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
@@ -71,7 +88,7 @@ EEF
 # Initialization of the script and start
 printf '\e[8;24;80t'
 load "░░░░░░░░░░░░░░░░░░░░"
-cd ~/
+cd ~/ || error_exit_programm "~/ домашняя дериктория не найдена | home directory not found"
 sleep 0.3s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░"
@@ -83,38 +100,30 @@ mkdir -p ~/temp_scripts_directory
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-cd ~/temp_scripts_directory/
+cd ~/temp_scripts_directory/ || error_exit_programm "~/temp_scripts_directory/"
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-#git clone git@github.com:merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580.git
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-#cd Script-install-EFI-B360M-A_i3-9100F_RX580/script/
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-#chmod 777 install_ru.sh
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-#chmod 777 install_en.sh
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-#mv install_ru.sh ~/temp_scripts_directory
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-#mv install_en.sh ~/temp_scripts_directory
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-#cd ../../
 sleep 0.1s
 
 load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
-#rm -rf Script-install-EFI-B360M-A_i3-9100F_RX580/
 
 language_confirm_function
