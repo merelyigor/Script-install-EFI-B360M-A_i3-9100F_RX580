@@ -218,6 +218,8 @@ sure that it is already in the right place and the EFI folder that I update and
 I hold it now contains your custom config with your data
 serial numbers and more.
 
+![23](img/23.png "23")
+
 ### Periodic revision of scripts and their improvement for the better.
 
 ##### You can contact me through the contacts on my site [blog.eremenko.top](https://blog.eremenko.top)
