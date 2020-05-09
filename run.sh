@@ -63,7 +63,7 @@ EEF
 EEF
   fi
 
-  read -r -p "INPUT|ВВОД: "language_confirm
+  read -r -p "INPUT|ВВОД: " language_confirm
 
   if [ "$language_confirm" == "1" ]; then
     load "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
