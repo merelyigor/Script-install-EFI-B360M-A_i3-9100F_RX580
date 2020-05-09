@@ -1,9 +1,9 @@
 #!/bin/bash
-#---------------------------------------------
-#======================== Run scripts =======1.0
-#----------------------------------------------
+#---------------------------------------------------
+#======================== Run scripts PHP =======2.0
+#---------------------------------------------------
 
-cd /Users/igor/GitHub/MY\ HACKINTOS\ EFI-FILES/Script-install-EFI-B360M-A_i3-9100F_RX580/php
+cd ~/GitHub/MY\ HACKINTOS\ EFI-FILES/Script-install-EFI-B360M-A_i3-9100F_RX580/php || exit 
 
 chmod +x console.php
 
