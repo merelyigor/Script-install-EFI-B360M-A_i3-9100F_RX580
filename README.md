@@ -8,12 +8,12 @@ There is a lot of work
 
 [Open repo with script for automatic delivery of EFI to disk](https://github.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580)
 
+Copy to terminal and press Enter
+```
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/run.sh)"
-
-#### Use in Russian
-`bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_ru.sh)"`
-
-#### Use in English
-`bash -c "$(curl -fsSL https://raw.githubusercontent.com/merelyigor/Script-install-EFI-B360M-A_i3-9100F_RX580/master/script/install_en.sh)"`
+```
 
 ## What kind of repo with custom config ???
+
+
+## So how do make your own repo config.plist so that everything works smoothly ???
