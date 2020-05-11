@@ -363,7 +363,7 @@ function efi_delivery() {
   rm -rf *
   rm -rf .Trashes/*
   git clone git@github.com:merelyigor/Asus-Prime-B360M-A_i3-9100F_RX580.git
-  mv Asus-Prime-B360M-A_i3-9100F_RX580/Folder-MacOS-to-clover-partition/EFI/ ./
+  mv Asus-Prime-B360M-A_i3-9100F_RX580/EFI/ ./
   rm -rf Asus-Prime-B360M-A_i3-9100F_RX580/
   facke_loading
   clear
