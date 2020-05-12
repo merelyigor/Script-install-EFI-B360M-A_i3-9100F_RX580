@@ -355,16 +355,16 @@ function check_efi_mount() {
 
 ######################################################### DELIVERY #########################################################################
 function efi_delivery() {
-  # получение папки EFI из репозитория https://github.com/merelyigor/Asus-Prime-B360M-A_i3-9100F_RX580
+  # получение папки EFI из репозитория https://github.com/merelyigor/Asus-Prime-B360M-A_i3-9100F_RX580_hackintosh-EFI
   # перемещение папки в EFI раздел + очистка мусора до и после перемещения
   clear
   head_text
   cd /Volumes/EFI/ || error_exit_programm "/Volumes/EFI/"
   rm -rf *
   rm -rf .Trashes/*
-  git clone git@github.com:merelyigor/Asus-Prime-B360M-A_i3-9100F_RX580.git
-  mv Asus-Prime-B360M-A_i3-9100F_RX580/EFI/ ./
-  rm -rf Asus-Prime-B360M-A_i3-9100F_RX580/
+  git clone git@github.com:merelyigor/Asus-Prime-B360M-A_i3-9100F_RX580_hackintosh-EFI.git
+  mv Asus-Prime-B360M-A_i3-9100F_RX580_hackintosh-EFI/EFI/ ./
+  rm -rf Asus-Prime-B360M-A_i3-9100F_RX580_hackintosh-EFI/
   facke_loading
   clear
   head_text
